@@ -1,0 +1,90 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+    <body>
+        <form>
+            <h1>Inscription</h1>
+
+
+            <label for="firstName">Prenom</label>
+            <input type="text" name="firstName" placeholder="Dupont"> 
+
+            <label for="lastName">Nom</label>
+            <input type="text" name="lastName" placeholder="DUPONT"> 
+
+            <label for="email">Email</label >
+            <input type="email" name="email" placeholder="exemple@exemple.com"> 
+
+            <label for="phone">Telephone</label>
+            <input type="phone" name="phone" pattern="[0-9]{10}" placeholder="0612345678"> 
+
+            <label for="date">Date de naissance</label>
+            <input type="date" name="date">
+
+            <label for="pays">Pays de naissance</label>
+            <select name="country" id="pays">
+                <option value="1">France</option>
+                <option value="2">Espagne</option>
+                <option value="3">Portugal</option>
+                <option value="4">Maroc</option>
+                <option value="5">Algerie</option>
+            </select>
+
+            <label for="note">Note au BAC</label>
+            <input type="number" name="note" min="0" max="20" placeholder="20">
+
+            <div class="space-beetwenn">
+                <h3>Formations</h3>
+                <label class="container">IUT
+                <input type="checkbox" >
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Master
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Licence
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Prépa
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+            </div> 
+
+            <div class="space-beetwenn">
+
+                <h3>Langue</h3>
+                <label class="container">Francais
+                <input type="radio" name="langue" checked="checked">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Marocain
+                <input type="radio" name="langue">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Anglais
+                <input type="radio" name="langue">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Espagnol
+                <input type="radio" name="langue">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+
+                    
+
+            <label for="file-upload" class="custom-file-upload"> Lettre de motivation </label>
+            <input id="file-upload" type="file"/>
+            
+            <input type="submit" value="Valider">
+
+        </form>
+    </body>
+</html>
+

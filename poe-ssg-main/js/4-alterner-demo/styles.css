@@ -1,0 +1,15 @@
+.carre{
+   background-color: red;
+   width: 50px;
+   height: 50px; 
+}
+#btn{
+    border: 1px solid black;
+    width: 30px;
+    padding: 10px;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.blue{
+    background-color: blue;
+}

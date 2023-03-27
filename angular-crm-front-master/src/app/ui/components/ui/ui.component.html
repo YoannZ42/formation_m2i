@@ -1,0 +1,24 @@
+<div class="ui d-flex flex-column">
+  <header>
+    <ng-content select=".tr-header"></ng-content>
+    <span (click)="toggle()">
+      <ng-content *ngIf="close" select=".tr-button-open"></ng-content>
+      <ng-content *ngIf="!close" select=".tr-button-close"></ng-content>
+    </span>
+  </header>
+  <main class="d-flex flex-grow-1">
+    <aside>
+      <nav [ngClass]="{'close-nav': close}">
+        <ng-content select=".tr-nav"></ng-content>
+      </nav>
+    </aside>
+    <div class="d-flex flex-column flex-grow-1">
+      <div class="content flex-grow-1">
+        <ng-content select=".tr-content"></ng-content>
+      </div>
+      <footer>
+        <ng-content select=".tr-footer"></ng-content>
+      </footer>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,49 @@
+/*ici tous les styles*/
+/* p{
+    color: red;
+} */
+
+/*cibler par id*/
+#titre-principal{
+    color: rgb(25, 25, 88);
+}
+/*cibler par classe*/
+.titre-principal {
+        color: rgb(231, 210, 204);
+}
+/*
+trois façons de déclarer des couleurs
+    => red, blue, ...
+    => HEX
+    => rgb avec possibilité de rgba(red, green, blue, alpha)
+*/
+
+#parent{
+    display: flex;
+}
+/*chaque DIV enfant prend la même largeur*/
+.enfant{
+    flex: 1;
+}
+
+#parent-2 {
+    display: flex;
+    background-color: beige;
+}
+.enfant-2-large{
+    flex: 2;
+}
+.enfant-2-small {
+    flex: 1;
+}
+/*media query*/
+@media screen and (max-width:600px) {
+    /*ces styles s'appliquent de 1 à 600px*/
+    .titre-principal {
+            color: red;
+    }
+    #parent-2{
+        /*placer les DIV les unes en dessous des autres*/
+        flex-direction: column;
+    }
+}

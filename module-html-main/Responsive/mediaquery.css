@@ -1,0 +1,45 @@
+h1{
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 25%;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.flex-container > div:nth-child(2n+1){
+    background-color: blue;
+}
+.flex-container > div:nth-child(2n){
+    background-color: lightblue;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        background-color: orange;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,11 @@
+/*donner du style à la div*/
+#btn-red{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+#btn-blue {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}

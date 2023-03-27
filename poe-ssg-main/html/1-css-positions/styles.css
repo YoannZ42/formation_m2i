@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 1rem;
+}
+.box-menu img {
+    height: 70px;
+}
+/*bouton à l'état initial*/
+.buy{
+    text-decoration: none;
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+/*bouton au survol*/
+.buy:hover{
+    background-color: white;
+    color: indigo;
+    border: 1px solid indigo ;
+}
+/*ici article est notre point de référence*/
+article{
+    position: relative;
+    margin: 1rem;
+    text-align: center;
+}
+.tag{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: green;
+    color: white;
+    padding: 6px;
+    border-radius: 7px;
+}
+/*Donner du style à la section products*/
+#products{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+/*on cible la première DIV de article*/
+article div:first-child{
+    margin-bottom: 1rem;
+}

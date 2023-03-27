@@ -1,0 +1,28 @@
+
+
+
+h1 {
+    color : green;
+    border: 1px solid blue;
+}
+
+
+p {
+    background-color: red;
+}
+
+
+.ligne-1 {
+    background-color: blue;
+}
+
+.font-color {
+    color : white
+}
+
+#exemple {
+    margin-top: 4%;
+}
+
+
+

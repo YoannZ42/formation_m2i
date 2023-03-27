@@ -1,0 +1,48 @@
+
+
+h1 {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.flex-container > div:nth-child(2n){
+    background-color: blue;
+}
+.flex-container > div:nth-child(2n+1){
+    background-color: lightblue;
+}
+
+h3 {
+    text-decoration: underline
+}
+
+
+@media (max-width: 800px) {
+    body {
+        background-color: orange;
+    }
+    .flex-container {
+        display: block;
+    }
+    .flex-container > div {
+        width: 100%;
+        margin: 10px;
+        padding: 20px;
+        font-size: 25px;
+    }
+}
+
+
+
