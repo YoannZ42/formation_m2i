@@ -1,0 +1,46 @@
+{
+  "messages": [
+    {
+      "user": "Jean",
+      "date": "2023-03-27",
+      "contenu": "Bonjour",
+      "canal":1,
+      "id": 1
+    },
+    {
+      "user": "Pierre",
+      "date": "2023-03-28",
+      "contenu": "Comment vas-tu ?",
+      "canal":1,
+      "id": 2
+    },
+    {
+      "user": "Jean",
+      "date": "2023-03-28",
+      "contenu": "Tres bien et toi ? ?",
+      "canal":1,
+      "id": 3
+    },
+    {
+      "user": "Paul",
+      "date": "2023-02-28",
+      "contenu": "Lalalalaa ?",
+      "canal":2,
+      "id": 4
+    }
+  ],
+  "canaux": [
+    {
+      "name": "Travail",
+      "id": 1
+    },
+    {
+      "name": "Perso",
+      "id": 2
+    },
+    {
+      "name": "Perso-bis",
+      "id": 3
+    }
+  ]
+}

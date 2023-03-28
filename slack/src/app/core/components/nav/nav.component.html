@@ -1,0 +1,7 @@
+<p>Canaux :</p>
+
+<div>
+    <tr *ngFor="let canal of collectionCanal$ | async">
+      <button (click)="goToCanal(canal.id)"></button>
+    </tr>
+</div>

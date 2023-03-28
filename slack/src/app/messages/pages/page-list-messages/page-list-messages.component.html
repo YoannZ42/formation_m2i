@@ -1,0 +1,11 @@
+<app-template-full-width  canal="canal">
+  <app-template-container *ngIf="collectionMessage$ | async as collection">
+    <tr *ngFor="let message of collection">
+      <td>{{message.contenu}}</td>
+      <td>{{message.contenu}}</td>
+      <td>{{message.date}}</td>
+    </tr>
+  </app-template-container>
+</app-template-full-width>
+
+
